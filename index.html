@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Selection E-commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="premLogo.png" alt="">
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li class="close-nav" id="closeNav" style="display:none;"><span style="font-size:2rem;cursor:pointer;">&times;</span></li>
+      <li><a href="#foodMenu">Food Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+      <div class="order-cart" id="orderCart" title="View Order">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.334 16h9.332c.828 0 1.54-.672 1.658-1.493l1.334-9.34A1 1 0 0 0 18.667 4H5.333l-.195-1.447A1 1 0 0 0 4.153 2H2v2h1.153l1.6 11.947A2.001 2.001 0 0 0 6.667 18h10.666v-2H7.334z"/>
+        </svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </div>
+  </nav>
+  <div class="headline">
+    <img src="headline.jpeg" alt="headline" width="100%" ,height="150">
+  </div>
+  <div class="banner">
+    <img src="prem banner 2.jpg" alt="banner">
+  </div>
+
+  <!-- Food Categories -->
+  <main class="food-section" id="foodMenu">
+    <h1>👨‍🍳Select Your Food👨‍🍳</h1>
+
+    <section class="category">
+      <h3>Welcome Drink (Select Any One)</h3>
+      <div class="items">
+        <div class="item">
+          <img src="tomato-soup.jpg" alt="tomato soup" width="100px" height="120px">
+          <p>Tomato Soup With Cream</p>
+        </div>
+        <div class="item">
+          <img src="tomatoButter.jpg" alt="tomatoButter">
+          <p>Tomato Butter Soup</p>
+        </div>
+        <div class="item">
+          <img src="hot & sour soup.jpg" alt="">
+          <p>Hot & Sour Chicken Soup</p>
+        </div>
+        <div class="item">
+          <img src="teaCofee.jpg" alt="">
+          <p>Tea/Cofee</p>
+        </div>
+        <div class="item">
+          <img src="jaljeera.jpg" alt="">
+          <p>Jaljeera</p>
+        </div>
+        <div class="item">
+          <img src="coldDrink.jpg" alt="">
+          <p>Cold Drink</p>
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <h3>Moving Snack ( Select Any Four )</h3>
+      <div class="items">
+        <div class="item">
+          <img src="paneer goli.jpg" alt="">
+          <p>Paneer Goli</p>
+        </div>
+        <div class="item">
+          <img src="paneer tikka.jpg" alt="">
+          <p>Paneer Tikka</p>
+        </div>
+        <div class="item">
+          <img src="hara bhara kabab.jpg" alt="">
+          <p>Hara Bhara Kabab</p>
+        </div>
+        <div class="item">
+          <img src="musshroom chilli.jpg" alt="">
+          <p>Mushroom Chilli</p>
+        </div>
+        <div class="item">
+          <img src="babycorn.jpg" alt="">
+          <p>Babycorn Chilli</p>
+        </div>
+        <div class="item">
+          <img src="mini gulab jamun.jpg" alt="">
+          <p>Mini Gulab Jamun</p>
+        </div>
+        <div class="item">
+          <img src="mini rasgulla.jpg" alt="">
+          <p>Mini Rasogulla</p>
+        </div>
+        <div class="item">
+          <img src="fish finger.jpg" alt="">
+          <p>Fish Finger</p>
+        </div>
+        <div class="item">
+          <img src="mutton goli.jpg" alt="">
+          <p>Mutton Goli</p>
+        </div>
+        <div class="item">
+          <img src="spring roll.jpg" alt="">
+          <p>Spring Roll</p>
+        </div>
+        <div class="item">
+          <img src="chicken tikka.jpg" alt="">
+          <p>Chicken Tikka</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="category">
+      <h3>Hi Tea (Any One )</h3>
+      <div class="items">
+        <div class="item">
+          <p>Gol Gappa</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Veg Chowmin</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Papdi Chat</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Tikka Chat</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Lirri Chokha</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Munchurian</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Chilli</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h3>Rice ( Any One )</h3>
+      <div class="items">
+        <div class="item">
+          <p>Veg Pulao</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Jeera Rice</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Greem Peas Pulao</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Veg fried Rice</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Chicken Fried Rice</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Shahi Pulao</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h3>Dal ( Any One )</h3>
+      <div class="items">
+        <div class="item">
+          <p>Chana Makhani Dal</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Dal Muglai</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Mix Dal</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Dal Kashmiri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Dal Mahrani</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Chana Dal Tadka & Butter Fry</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="category">
+      <h3>Roti & Paratha ( Any Two )</h3>
+      <div class="items">
+        <div class="item">
+          <p>Plain Puri Statted</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Puri (Hing Palak)</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Kashmiri Kacouri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Stuffed Kachouri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Khasta Kachouri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Palak Puri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Butter Naan</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Stuffed Naan</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Lachha Paratha</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Tandoor Paratha</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Stuffed Paratha</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Miss Roti</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h3>Vegetable (Any Two)</h3>
+      <div class="items">
+        <div class="item">
+          <p>Gobi Musallam</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Gobi Do Pyaza</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Bhindi Kalaunji</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Baigan Bhaji</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Subnum Curry</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Mixed vegetales</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Matar Mushroom</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Finger Chips</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Channa Fry</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Channa Chilli</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Veg Manchurian</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Tava Tamancha</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Veg Jhalfrezi</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Tawa Garden</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Aloo Gobi</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Aloo Parwal</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Aloo Palak</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Bhindi Do Pyaza</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Baigan Bharta</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Aloo Kurmura</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Aloo Methi</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Dum Aloo</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Kashmiri Aloo</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Parwal Do Pyaza</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Malai Kofta</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Navrattan Korma</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Veg Korma</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p> Veg Jaipuri</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <h3>Paneer ( Any One )</h3>
+      <div class="items">
+        <div class="item">
+          <p>Paneer Butter Masala</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Masala</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Shahi Paneer</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Do Pyaza</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Chicken Butter Masala</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Handi</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Malai Kofta</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Shimla</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Bhujiya</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Chilli</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Pasanda</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Mushroom Masala</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Tandoori Masala</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <div class="item">
+          <p>Paneer Jhalfrezi</p>
+          <button onclick="toggleSelect(this)">Select</button>
+        </div>
+        <section class="category">
+          <h3>Chicken ( Any One ) <i>You Can Choose ( Any Two ) From "Non Veg" Category !!</i> </h3>
+          <div class="items">
+            <div class="item">
+              <p>Chicken Curry</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Do Payaza</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Isttu</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Chilli</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Butter Masala</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Kadahi</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Boti Kabab</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Murga Mussalam</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Dahi</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Shahjahan</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Masala</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Kashmiri</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Hyderabadi</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Korma</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Noorani</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Bharta</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Makhani</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Tikka</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Seek Kabab</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chicken Kali Mirch</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Mutton ( Any One )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Mutton Curry</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Do Payaza</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Isttu</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Roganjosh</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Bhuna</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Seek Kabab</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Kalia</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Keema</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Muglai</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mutton Goli Kabab</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Fish ( Any One )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Fish Fry</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Curry</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Cutlet</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Do Payaza</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Chilli</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Finger</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Dahi</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Kalia</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Isttu</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Butter</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Fish Stuff</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Rayta ( Any One )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Palak Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Kaddu Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mixed Fruit Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Khira Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Tomato & Fruit Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Dahi Bada</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Aloo Rayata</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Chatni ( Any One )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Tomato Chatni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Navrattan Chatni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Ananas Chatni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Angoor Chatni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Imli Chatni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Papaya Jelly</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mixed Fruit Jelly</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Kacha Mango Jelly</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Dhania Pudina Lahsuni</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Sweets ( Any Three )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Sponge Rasgulla</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Hot Gulab Jamun</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Ice Cream</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Pantuva</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Rajbhog</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Jalebi</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Imarati & Rabri</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Gajar Halwa</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Rashmalai</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Moongdal Halwa</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Beshan Halwa</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <h3>Salad ( Any One )</h3>
+          <div class="items">
+            <div class="item">
+              <p>Fruit Salad</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Mixed Green Salad</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Sprouted Salad</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Chinese Salad</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+            <div class="item">
+              <p>Microni Salad</p>
+              <button onclick="toggleSelect(this)">Select</button>
+            </div>
+          </div>
+        </section> -->
+  </main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p><strong>Welcome to Prem Ashirwad Banquet Hall, Patna’s Premier Celebration Destination!</strong></p>
+
+      <p>Located in the heart of <strong>Patna, Bihar</strong>, our banquet hall is the ideal venue for weddings,
+        receptions, birthday parties, corporate meetings, and all types of special events. We blend modern luxury with
+        traditional charm to make your celebration unforgettable.</p>
+
+      <h3>Who We Are ?</h3>
+      <p>We pride ourselves on delivering excellent service, personalized arrangements, and a warm atmosphere. Whether
+        you're hosting 50 or 500 guests, we ensure that every moment is magical and every need is met with care.</p>
+
+      <h3>What We Offer</h3>
+      <ul id="checklist">
+        <li>Spacious & Air-conditioned Hall</li>
+        <li>Premium Catering Services</li>
+        <li>Custom Decoration Themes</li>
+        <li>Modern Lighting & AV Setup</li>
+        <li>DJ & Entertainment Options</li>
+        <li>Ample Parking Area</li>
+        <li>Strict Hygiene and Cleanliness</li>
+      </ul>
+
+      <h3>Why Choose Us?</h3>
+      <p>With years of experience and a passion for hospitality, we don't just rent space—we create experiences. From
+        your first inquiry to the final guest departure, we ensure seamless coordination and joyful memories.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="gallery">
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+        <img src="gallery7.jpg" alt="Banquet Hall Interior">
+        <img src="gallery2.jpeg" alt="Wedding Decoration">
+        <img src="gallery3.jpg" alt="Reception Setup">
+        <img src="gallery4.jpeg" alt="Stage Decor">
+        <img src="prem01.jpg" alt="Dining Area">
+        <img src="prem02.jpg" alt="Lighting View">
+        <img src="gallery7.jpg" alt="Lighting View">
+        <img src="gallery8.avif" alt="Lighting View">
+        <img src="gallery9.jpg" alt="Lighting View">
+        <img src="gallery10.avif" alt="Lighting View">
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm"
+      action="https://script.google.com/macros/s/AKfycbwtFCdUDx1jOacYlOCq8s1uB1hRoNdAV764Cha3GWsC1gBwhxMX1flDaztOg_5Ss-5B/exec"
+      method="POST">
+      <input type="text" name="name" id="userName" placeholder="Your Name" required><br><br>
+      <input type="tel" name="phone" id="userPhone" placeholder="Phone Number" required><br><br>
+      <input type="text" name="address" id="userAddress" placeholder="Address" required><br><br>
+      <textarea id="selectedItems" name="order" rows="5" placeholder="Selected food items..."
+        readonly></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = e.target;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(res => res.text())
+        .then(text => {
+          if (text.includes('Success')) {
+            alert('Form submitted successfully!');
+            form.reset();
+            document.getElementById('selectedItems').value = '';
+          } else {
+            alert('Submission failed: ' + text);
+          }
+        })
+        .catch(err => {
+          console.error('Submit error:', err);
+          alert('Error submitting form. Please try again.');
+        });
+    });
+  </script>
+
+</body>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919065044801" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+    style="width:48px;height:48px;">
+</a>
+
+<footer class="footer">
+  <p>📞 Contact: +91-9006047191</p>
+  <p>📍 Location:
+    <a href="https://maps.app.goo.gl/GJ49wuDVJPZnxBWK9" target="_blank">
+      View on Google Maps
+    </a>
+  </p>
+  <p>✉️ Email: <a href="mailto:info@foodselect.com">info@foodselect.com</a></p>
+</footer>
+
+</html>
